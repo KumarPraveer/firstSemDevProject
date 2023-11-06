@@ -1,0 +1,240 @@
+//This is scss file
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-family: "Phudu", cursive;
+    font-family: "Roboto", sans-serif;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#background-video {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 5em;
+    bottom: 0;
+    z-index: -1;
+}
+#background-video::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.77);
+}
+
+.header {
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    .logo {
+        font-size: 1.4em;
+        font-weight: 500;
+        cursor: pointer;
+        color: gray;
+    }
+    .menu {
+        ul {
+            li {
+                list-style: none;
+                display: inline-block;
+                padding: 0 1em;
+                cursor: pointer;
+                :hover {
+                    color: orangered;
+                }
+            }
+        }
+    }
+}
+.home-sec {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content {
+        width: 40%;
+        color: white;
+        h1 {
+            line-height: 1.5em;
+        }
+    }
+    .image-container {
+        height: 400px;
+        video {
+            height: 100%;
+            clip-path: polygon(52% 11%, 100% 0, 94% 39%, 100% 98%, 70% 100%, 39% 88%, 0 100%, 0 46%, 8% 21%, 13% 2%);
+        }
+    }
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+#praveer {
+    color: orangered;
+    text-decoration: underline;
+}
+.hame-para {
+    margin-top: 0.6em;
+    width: 80%;
+    text-align: justify;
+}
+
+button {
+    margin-top: 1em;
+    cursor: pointer;
+    background-color: orangered;
+    border: none;
+    color: white;
+    padding: 1.5em 1.5em;
+    clip-path: polygon(21% 9%, 75% 3%, 100% 14%, 94% 69%, 81% 87%, 28% 88%, 0% 80%, 0 28%);
+    a {
+        color: white;
+    }
+}
+.registration-form {
+    padding-top: 8em;
+    display: flex;
+    justify-content: center;
+    .table-section {
+        h1 {
+            color: orangered;
+            margin-bottom: 0.4em;
+        }
+        table {
+            border: 2px solid orangered;
+            border-top-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 1em;
+            color: gray;
+            tr {
+                td {
+                    padding: 0.4em;
+                }
+            }
+        }
+    }
+    .image-section {
+        height: 400px;
+        img {
+            padding-left: 4em;
+            height: 100%;
+        }
+    }
+}
+.contact-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    .info {
+        h1 {
+            color: gray;
+        }
+        .contact-para {
+            color: gray;
+        }
+        h2 {
+            color: gray;
+        }
+        p {
+            color: orangered;
+            margin-bottom: 1em;
+        }
+    }
+    .image-section {
+        margin-left: 2em;
+        height: 400px;
+        img {
+            height: 100%;
+        }
+    }
+}
+.about-section {
+    padding-top: 7em;
+    .box-container {
+        margin-bottom: 5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .image-container {
+            height: 300px;
+            img {
+                height: 100%;
+                clip-path: polygon(13% 7%, 80% 0%, 100% 0, 99% 60%, 76% 93%, 20% 100%, 0% 80%, 0 35%);
+            }
+        }
+        .content-section {
+            width: 50%;
+            margin-left: 2em;
+            margin-right: 2em;
+            h1 {
+                color: orangered;
+            }
+            p {
+                margin-top: 0.5em;
+                color: gray;
+                text-align: justify;
+            }
+        }
+    }
+}
+
+.pagination-section {
+    padding-top: 8em;
+    .image-container {
+        margin-bottom: 2em;
+        #images_section {
+            height: 400px;
+            width: 600px;
+            margin: 0 auto;
+            clip-path: polygon(50% 0%, 76% 0, 100% 0, 100% 60%, 95% 98%, 47% 95%, 5% 94%, 7% 66%, 2% 35%, 3% 7%);
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+    }
+    .pagination {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        ul {
+            display: flex;
+            cursor: pointer;
+            :hover {
+                background-color: orangered;
+                color: white;
+            }
+            li {
+                list-style: none;
+                padding: 0.7em 1em;
+                border-radius: 100%;
+                margin: 0.4em;
+            }
+            .active {
+                background-color: orangered;
+                color: white;
+            }
+        }
+        .btn1,
+        .btn2 {
+            padding: 1em;
+        }
+    }
+}
+iframe {
+    clip-path: polygon(30% 0%, 70% 0%, 93% 14%, 100% 50%, 91% 90%, 9% 100%, 0 40%, 0 0);
+    margin: 3em;
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagination</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Phudu:wght@400;500;600;700;800;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <span>Kumar</span>
+            <span id="praveer">Praveer</span>
+        </div>
+        <div class="menu">
+            <ul>
+                <li>
+                    <a href="/">Home</a>
+                </li>
+                <li><a href="about.html">Update</a></li>
+                <li><a href="registration.html">Registration</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pagination.html">Pagination</a></li>
+
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="pagination-section">
+
+        <div class="image-container">
+            <div id="images_section">
+                <img id="images" src="1.jpg" alt="series1">
+            </div>
+        </div>
+
+
+        <div class="pagination">
+            <button class="btn1" onclick="backBtn()">prev</button>
+            <ul>
+                <li class="link active" value="1" onclick="activeLink()">1</li>
+                <li class="link" value="2" onclick="activeLink()">2</li>
+                <li class="link" value="3" onclick="activeLink()">3</li>
+                <li class="link" value="4" onclick="activeLink()">4</li>
+                <li class="link" value="5" onclick="activeLink()">5</li>
+                <li class="link" value="6" onclick="activeLink()">6</li>
+            </ul>
+            <button class="btn2" onclick="nextBtn()">next</button>
+        </div>
+    </div>
+
+
+    <script>
+        let prevBtn = document.getElementById('');
+        let link = document.getElementsByClassName('link');
+        let images = document.querySelector("#images");
+        let currentValue = 1;
+
+        function activeLink() {
+            for (l of link) {
+                l.classList.remove('active');
+            }
+            event.target.classList.add('active');
+            currentValue = event.target.value;
+            images.src = currentValue + ".jpg";
+        }
+
+        function backBtn() {
+            if (currentValue > 1) {
+                for (l of link) {
+                    l.classList.remove('active');
+                }
+                currentValue--;
+                link[currentValue - 1].classList.add('active');
+                images.src = currentValue + ".jpg";
+            }
+        }
+
+        function nextBtn() {
+            if (currentValue < 6) {
+                for (l of link) {
+                    l.classList.remove('active');
+                }
+                currentValue++;
+                link[currentValue - 1].classList.add('active');
+                images.src = currentValue + ".jpg";
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

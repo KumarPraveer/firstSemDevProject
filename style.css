@@ -1,0 +1,242 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Phudu", cursive;
+  font-family: "Roboto", sans-serif;
+  font-family: "Ubuntu", sans-serif;
+}
+
+#background-video {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 5em;
+  bottom: 0;
+  z-index: -1;
+}
+
+#background-video::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.77);
+}
+
+.header {
+  padding: 2em;
+  display: flex;
+  justify-content: space-around;
+  position: fixed;
+  z-index: 10;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+.header .logo {
+  font-size: 1.4em;
+  font-weight: 500;
+  cursor: pointer;
+  color: gray;
+}
+.header .menu ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 1em;
+  cursor: pointer;
+}
+.header .menu ul li :hover {
+  color: orangered;
+}
+
+.home-sec {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home-sec .content {
+  width: 40%;
+  color: white;
+}
+.home-sec .content h1 {
+  line-height: 1.5em;
+}
+.home-sec .image-container {
+  height: 400px;
+}
+.home-sec .image-container video {
+  height: 100%;
+  -webkit-clip-path: polygon(52% 11%, 100% 0, 94% 39%, 100% 98%, 70% 100%, 39% 88%, 0 100%, 0 46%, 8% 21%, 13% 2%);
+          clip-path: polygon(52% 11%, 100% 0, 94% 39%, 100% 98%, 70% 100%, 39% 88%, 0 100%, 0 46%, 8% 21%, 13% 2%);
+}
+
+a {
+  text-decoration: none;
+  color: gray;
+}
+
+#praveer {
+  color: orangered;
+  text-decoration: underline;
+}
+
+.hame-para {
+  margin-top: 0.6em;
+  width: 80%;
+  text-align: justify;
+}
+
+button {
+  margin-top: 1em;
+  cursor: pointer;
+  background-color: orangered;
+  border: none;
+  color: white;
+  padding: 1.5em 1.5em;
+  -webkit-clip-path: polygon(21% 9%, 75% 3%, 100% 14%, 94% 69%, 81% 87%, 28% 88%, 0% 80%, 0 28%);
+          clip-path: polygon(21% 9%, 75% 3%, 100% 14%, 94% 69%, 81% 87%, 28% 88%, 0% 80%, 0 28%);
+}
+button a {
+  color: white;
+}
+
+.registration-form {
+  padding-top: 8em;
+  display: flex;
+  justify-content: center;
+}
+.registration-form .table-section h1 {
+  color: orangered;
+  margin-bottom: 0.4em;
+}
+.registration-form .table-section table {
+  border: 2px solid orangered;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 1em;
+  color: gray;
+}
+.registration-form .table-section table tr td {
+  padding: 0.4em;
+}
+.registration-form .image-section {
+  height: 400px;
+}
+.registration-form .image-section img {
+  padding-left: 4em;
+  height: 100%;
+}
+
+.contact-us {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.contact-us .info h1 {
+  color: gray;
+}
+.contact-us .info .contact-para {
+  color: gray;
+}
+.contact-us .info h2 {
+  color: gray;
+}
+.contact-us .info p {
+  color: orangered;
+  margin-bottom: 1em;
+}
+.contact-us .image-section {
+  margin-left: 2em;
+  height: 400px;
+}
+.contact-us .image-section img {
+  height: 100%;
+}
+
+.about-section {
+  padding-top: 7em;
+}
+.about-section .box-container {
+  margin-bottom: 5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-section .box-container .image-container {
+  height: 300px;
+}
+.about-section .box-container .image-container img {
+  height: 100%;
+  -webkit-clip-path: polygon(13% 7%, 80% 0%, 100% 0, 99% 60%, 76% 93%, 20% 100%, 0% 80%, 0 35%);
+          clip-path: polygon(13% 7%, 80% 0%, 100% 0, 99% 60%, 76% 93%, 20% 100%, 0% 80%, 0 35%);
+}
+.about-section .box-container .content-section {
+  width: 50%;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.about-section .box-container .content-section h1 {
+  color: orangered;
+}
+.about-section .box-container .content-section p {
+  margin-top: 0.5em;
+  color: gray;
+  text-align: justify;
+}
+
+.pagination-section {
+  padding-top: 8em;
+}
+.pagination-section .image-container {
+  margin-bottom: 2em;
+}
+.pagination-section .image-container #images_section {
+  height: 400px;
+  width: 600px;
+  margin: 0 auto;
+  -webkit-clip-path: polygon(50% 0%, 76% 0, 100% 0, 100% 60%, 95% 98%, 47% 95%, 5% 94%, 7% 66%, 2% 35%, 3% 7%);
+          clip-path: polygon(50% 0%, 76% 0, 100% 0, 100% 60%, 95% 98%, 47% 95%, 5% 94%, 7% 66%, 2% 35%, 3% 7%);
+}
+.pagination-section .image-container #images_section img {
+  height: 100%;
+  width: 100%;
+}
+.pagination-section .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination-section .pagination ul {
+  display: flex;
+  cursor: pointer;
+}
+.pagination-section .pagination ul :hover {
+  background-color: orangered;
+  color: white;
+}
+.pagination-section .pagination ul li {
+  list-style: none;
+  padding: 0.7em 1em;
+  border-radius: 100%;
+  margin: 0.4em;
+}
+.pagination-section .pagination ul .active {
+  background-color: orangered;
+  color: white;
+}
+.pagination-section .pagination .btn1,
+.pagination-section .pagination .btn2 {
+  padding: 1em;
+}
+
+iframe {
+  -webkit-clip-path: polygon(30% 0%, 70% 0%, 93% 14%, 100% 50%, 91% 90%, 9% 100%, 0 40%, 0 0);
+          clip-path: polygon(30% 0%, 70% 0%, 93% 14%, 100% 50%, 91% 90%, 9% 100%, 0 40%, 0 0);
+  margin: 3em;
+}/*# sourceMappingURL=style.css.map */
